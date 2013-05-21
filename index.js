@@ -18,7 +18,7 @@ function Stringify(opts, replacer, space) {
     this._state = {
         open: opts.open,
         sep: ((!opts.open || !opts.close)? os.EOL : (opts.sep? opts.sep : ',')),
-        close: opts.close,
+        close: ((opts.open && opts.close)? opts.close : null),
         replacer: replacer,
         space: space,
         first: true
@@ -56,7 +56,7 @@ Stringify.prototype._transform = function(chunk, encoding, done) {
 };
 
 Stringify.prototype._flush = function(done) {
-    if (!this._state.first && this._state.close) {
+    if (this._state.close) {
         this.push(new Buffer(this._state.close));
     }
 
