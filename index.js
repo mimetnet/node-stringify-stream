@@ -58,6 +58,8 @@ Stringify.prototype._transform = function(chunk, encoding, done) {
 Stringify.prototype._flush = function(done) {
     if (this._state.close) {
         this.push(new Buffer(this._state.close));
+    } else if (true === this._state.first) {
+        this.push(new Buffer(''));
     }
 
     done();
