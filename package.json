@@ -1,0 +1,45 @@
+{
+  "name": "stringify-stream",
+  "version": "0.1.0",
+  "description": "Streaming Transform of objects via JSON.stringify",
+  "dependencies": {
+    "readable-stream": ">= 1.0.0",
+    "stream-array": ">= 0.1.0"
+  },
+  "devDependencies": {
+    "concat-stream": ">= 0.1.1",
+    "tap": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/tap ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mimetnet/node-stringify-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/mimetnet/node-stringify-stream/issues"
+  },
+  "keywords": [
+    "writable",
+    "readable",
+    "duplex",
+    "transform",
+    "stream",
+    "pipe"
+  ],
+  "author": "Matthew I. Metnetsky <matthew@cowarthill.com>",
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "engines": [
+    "node >= 0.8.0"
+  ],
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  }
+}
