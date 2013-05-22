@@ -29,7 +29,7 @@ function Stringify(opts, replacer, space) {
     }
 }
 
-Stringify.prototype = Object.create(Transform.prototype, {constructor: {value: Stringify}});
+util.inherits(Stringify, Transform);
 
 Stringify.prototype._transform = function(chunk, encoding, done) {
     var buf, str, error = null;
