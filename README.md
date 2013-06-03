@@ -2,7 +2,7 @@
 
 Streaming Transform of objects via JSON.stringify
 
-[![build status][1]][2]
+[![build status][1]][2] [![npm version][3]][4] [![dependencies][5]][6]
 
 ## Usage
 
@@ -50,3 +50,8 @@ npm install stringify-stream
 
   [1]: https://api.travis-ci.org/mimetnet/node-stringify-stream.png
   [2]: https://travis-ci.org/mimetnet/node-stringify-stream
+  [3]: https://badge.fury.io/js/stringify-stream.png
+  [4]: https://badge.fury.io/js/stringify-stream
+  [5]: https://david-dm.org/mimetnet/node-stringify-stream.png
+  [6]: https://david-dm.org/mimetnet/node-stringify-stream
+
