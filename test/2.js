@@ -7,7 +7,7 @@ var tap = require('tap')
 ;
 
 test('newline separated ints', function(t) {
-    streamify([1,2,3]).pipe(stringify()).pipe(concat(function(err, res) {
+    streamify([1,2,3]).pipe(stringify()).pipe(concat(function(res) {
         var match = [1,2,3].join(os.EOL);
 
         t.notOk(err, 'No error');
@@ -21,7 +21,7 @@ test('newline separated ints', function(t) {
 test('array of ints', function(t) {
     var opts = {open:'[', close:']'};
 
-    streamify([1,2,3]).pipe(stringify(opts)).pipe(concat(function(err, res) {
+    streamify([1,2,3]).pipe(stringify(opts)).pipe(concat(function(res) {
         t.notOk(err, 'No error');
         t.type(res, 'Buffer', 'concat results into a Buffer');
         t.equal('[1,2,3]', res.toString(), 'result matches expectation');
@@ -31,7 +31,7 @@ test('array of ints', function(t) {
 });
 
 test('pretty-print array of objects', function(t) {
-    streamify([{one:1}]).pipe(stringify(null, null, '\t')).pipe(concat(function(err, res) {
+    streamify([{one:1}]).pipe(stringify(null, null, '\t')).pipe(concat(function(res) {
         t.notOk(err, 'No error');
         t.type(res, 'Buffer', 'concat results into a Buffer');
         t.equal('{\n\t"one": 1\n}', res.toString(), 'result matches expectation');

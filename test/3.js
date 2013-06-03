@@ -7,7 +7,7 @@ var tap = require('tap')
 ;
 
 test('empty array', function(t) {
-    streamify([]).pipe(stringify()).pipe(concat(function(err, res) {
+    streamify([]).pipe(stringify()).pipe(concat(function(res) {
         t.notOk(err, 'No error');
         t.type(res, 'Buffer', 'concat results into a Buffer');
         t.equal('', res.toString(), 'result matches expectation');
@@ -17,7 +17,7 @@ test('empty array', function(t) {
 });
 
 test('pretty-print empty array', function(t) {
-    streamify([]).pipe(stringify({open:'[', close:']'})).pipe(concat(function(err, res) {
+    streamify([]).pipe(stringify({open:'[', close:']'})).pipe(concat(function(res) {
         t.notOk(err, 'No error');
         t.type(res, 'Buffer', 'concat results into a Buffer');
         t.equal('[]', res.toString(), 'result matches expectation');
