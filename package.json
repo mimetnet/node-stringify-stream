@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Streaming Transform of objects via JSON.stringify",
   "dependencies": {
-    "readable-stream": "~1.0.0",
+    "readable-stream": "~1.1.0",
     "stream-array": "~0.1.1"
   },
   "devDependencies": {
