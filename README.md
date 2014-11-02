@@ -12,7 +12,7 @@ Streaming Transform of objects via JSON.stringify
 var test = require('tap').test
     , concat = require('concat-stream')
     , streamify = require('stream-array')
-    , stringify = require('stringify-stream');
+    , stringify = require('stringify-stream')
 ;
 
 test('newlines', function(t) {
