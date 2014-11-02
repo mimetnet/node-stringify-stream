@@ -1,13 +1,13 @@
 {
   "name": "stringify-stream",
-  "version": "0.1.3",
+  "version": "1.0.0-beta",
   "description": "Streaming Transform of objects via JSON.stringify",
   "dependencies": {
-    "readable-stream": "~1.1.0",
-    "stream-array": "~0.1.0"
+    "readable-stream": "~1.1.0"
   },
   "devDependencies": {
-    "concat-stream": "~1.0.0",
+    "concat-stream": "~1.4.0",
+    "stream-array": "~1.0.0",
     "tap": "~0.4.0"
   },
   "scripts": {
