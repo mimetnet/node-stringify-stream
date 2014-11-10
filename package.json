@@ -8,10 +8,10 @@
   "devDependencies": {
     "concat-stream": "~1.4.6",
     "stream-array": "~1.0.1",
-    "tap": "~0.4.0"
+    "tape": "~3.0.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tap ./test/"
+    "test": "./node_modules/.bin/tape ./test/*.js"
   },
   "repository": {
     "type": "git",
