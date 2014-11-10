@@ -57,3 +57,6 @@ npm install stringify-stream
   [7]: https://david-dm.org/mimetnet/node-stringify-stream/dev-status.svg?#info=devDependencies
   [8]: https://david-dm.org/mimetnet/node-stringify-stream/#info=devDependencies
 
+## License
+
+[MIT License](https://github.com/mimetnet/node-stringify-stream/blob/master/LICENSE)
