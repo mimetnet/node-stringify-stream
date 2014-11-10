@@ -1,11 +1,7 @@
-var Transform = require('stream').Transform
+var Transform = require('readable-stream/transform')
     , util = require('util')
     , os = require('os')
 ;
-
-if (!Transform) {
-    Transform = require('readable-stream/transform');
-}
 
 function Stringify(opts, replacer, space) {
     if (!(this instanceof(Stringify)))
