@@ -48,12 +48,12 @@ test('array', function(t) {
 npm install stringify-stream
 ```
 
-  [1]: https://api.travis-ci.org/mimetnet/node-stringify-stream.png
+  [1]: https://api.travis-ci.org/mimetnet/node-stringify-stream.svg
   [2]: https://travis-ci.org/mimetnet/node-stringify-stream
-  [3]: https://badge.fury.io/js/stringify-stream.png
+  [3]: https://badge.fury.io/js/stringify-stream.svg
   [4]: https://badge.fury.io/js/stringify-stream
-  [5]: https://david-dm.org/mimetnet/node-stringify-stream.png
+  [5]: https://david-dm.org/mimetnet/node-stringify-stream.svg
   [6]: https://david-dm.org/mimetnet/node-stringify-stream
-  [7]: https://david-dm.org/mimetnet/node-stringify-stream/dev-status.png?#info=devDependencies
+  [7]: https://david-dm.org/mimetnet/node-stringify-stream/dev-status.svg?#info=devDependencies
   [8]: https://david-dm.org/mimetnet/node-stringify-stream/#info=devDependencies
 
