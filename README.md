@@ -2,7 +2,7 @@
 
 Streaming Transform of objects via JSON.stringify
 
-[![build status][1]][2] [![npm version][3]][4] [![dependencies][5]][6] [![devDependencies][7]][8]
+[![npm version][3]][4] [![build status][1]][2] [![dependencies][5]][6] [![devDependencies][7]][8]
 
 ## Usage
 
