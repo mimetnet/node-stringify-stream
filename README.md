@@ -9,7 +9,7 @@ Streaming Transform of objects via JSON.stringify
 ### Stream objects into newline separated JSON strings.
 
 ```js
-var test = require('tap').test
+var test = require('tape')
     , concat = require('concat-stream')
     , streamify = require('stream-array')
     , stringify = require('stringify-stream')
@@ -26,7 +26,7 @@ test('newlines', function(t) {
 ### Stream objects into an Array encoded as a JSON string.
 
 ```js
-var test = require('tap').test
+var test = require('tape')
     , concat = require('concat-stream')
     , streamify = require('stream-array')
     , stringify = require('stringify-stream');
