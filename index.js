@@ -24,6 +24,13 @@ function Stringify(opts, replacer, space) {
         first: true
     };
 
+    //
+    // Set proper separator length so its not computed everytime
+    //
+    if (this._state.sep) {
+        this._state.sepLength = Buffer.byteLength(this._state.sep);
+    }
+
     if (this._state.first && this._state.open) {
         this.push(new Buffer(this._state.open));
     }
@@ -32,16 +39,17 @@ function Stringify(opts, replacer, space) {
 util.inherits(Stringify, Transform);
 
 Stringify.prototype._transform = function(chunk, encoding, done) {
-    var buf, str, error = null;
+    var buf, str, length, error = null;
 
     try {
         str = !Buffer.isBuffer(chunk)? chunk : chunk.toString(encoding);
         str = JSON.stringify(str, this._state.replacer, this._state.space);
 
         if (!this._state.first && this._state.sep) {
-            buf = new Buffer(str.length + this._state.sep.length);
+            length = Buffer.byteLength(str, encoding) + this._state.sepLength;
+            buf = new Buffer(length);
             buf.write(this._state.sep, 0);
-            buf.write(str, this._state.sep.length);
+            buf.write(str, this._state.sepLength);
         } else {
             buf = new Buffer(str);
         }
