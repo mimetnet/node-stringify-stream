@@ -28,6 +28,16 @@ test('array of ints', function(t) {
     }));
 });
 
+test('array of objects with unicode', function (t) {
+    streamify([{ obj: '\u00bd' }, { otherObj: '\u00bc' }, { lastObj: '\u00be'}])
+        .pipe(stringify())
+        .pipe(concat(function (res) {
+            t.type(res, 'Buffer', 'concat results into a buffer');
+            t.equals('{"obj":"\u00bd"}\n{"otherObj":"\u00bc"}\n{"lastObj":"\u00be"}', res.toString(), 'result matches expectation');
+            t.end();
+    }));
+});
+
 test('pretty-print array of objects', function(t) {
     streamify([{one:1}]).pipe(stringify(null, null, '\t')).pipe(concat(function(res) {
         t.type(res, 'Buffer', 'concat results into a Buffer');
