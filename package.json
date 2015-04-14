@@ -1,17 +1,17 @@
 {
   "name": "stringify-stream",
-  "version": "1.0.0",
+  "version": "1.0.1-beta",
   "description": "Streaming Transform of objects via JSON.stringify",
   "dependencies": {
     "readable-stream": "~1.1.0"
   },
   "devDependencies": {
-    "concat-stream": "~1.4.0",
-    "stream-array": "~1.0.0",
-    "tap": "~0.4.0"
+    "concat-stream": "~1.4.8",
+    "stream-array": "~1.0.1",
+    "tape": "~4.0.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tap ./test/"
+    "test": "./node_modules/.bin/tape ./test/*.js"
   },
   "repository": {
     "type": "git",
