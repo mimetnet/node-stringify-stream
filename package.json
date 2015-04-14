@@ -1,6 +1,6 @@
 {
   "name": "stringify-stream",
-  "version": "1.0.1-beta",
+  "version": "1.0.1",
   "description": "Streaming Transform of objects via JSON.stringify",
   "dependencies": {
     "readable-stream": "~1.1.0"
