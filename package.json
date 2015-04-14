@@ -6,9 +6,9 @@
     "readable-stream": "~1.1.0"
   },
   "devDependencies": {
-    "concat-stream": "~1.4.6",
+    "concat-stream": "~1.4.8",
     "stream-array": "~1.0.1",
-    "tape": "~3.5.0"
+    "tape": "~4.0.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/tape ./test/*.js"
