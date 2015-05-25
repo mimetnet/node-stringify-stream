@@ -29,12 +29,7 @@
     "pipe"
   ],
   "author": "Matthew I. Metnetsky <matthew@cowarthill.com>",
-  "license": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
   "engines": [
     "node >= 0.8.0"
   ],
