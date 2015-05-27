@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "concat-stream": "~1.4.8",
-    "stream-array": "~1.0.1",
+    "stream-array": "~1.1.0",
     "tape": "~4.0.0"
   },
   "scripts": {
@@ -29,12 +29,7 @@
     "pipe"
   ],
   "author": "Matthew I. Metnetsky <matthew@cowarthill.com>",
-  "license": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
   "engines": [
     "node >= 0.8.0"
   ],
