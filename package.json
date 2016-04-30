@@ -3,12 +3,12 @@
   "version": "1.0.3",
   "description": "Streaming Transform of objects via JSON.stringify",
   "dependencies": {
-    "readable-stream": "~2.0.2"
+    "readable-stream": "~2.1.0"
   },
   "devDependencies": {
     "concat-stream": "~1.5.0",
     "stream-array": "~1.1.0",
-    "tape": "~4.2.0"
+    "tape": "~4.5.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/tape ./test/*.js"
