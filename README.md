@@ -44,7 +44,7 @@ test('array', function(t) {
 
 ## Install
 
-```
+```sh
 npm install stringify-stream
 ```
 
