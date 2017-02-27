@@ -1,5 +1,7 @@
 # stringify-stream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mimetnet/node-stringify-stream.svg)](https://greenkeeper.io/)
+
 Streaming Transform of objects via JSON.stringify
 
 [![npm version][3]][4] [![build status][1]][2] [![dependencies][5]][6] [![devDependencies][7]][8]
